@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Premium Travel</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <header>
+            <nav class="first">
+
+                <div class="navbar">
+                    <video src="vid1.mp4" loop muted autoplay plasinline></video>
+                </div>
+
+                <div class="img1">
+                    <img src="img2.jpg" alt="logo" style="border-radius: 50%; width: 80px; position: fixed; left: 1%; z-index: 999;">
+                </div>
+
+                <div class="nav-links" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; gap: 15px;">
+                    <a href="index.html"
+                        style="border: 2px solid cyan; border-radius: 5px; border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px;padding: 6.5px; box-shadow: 0 0 10px cyan;">HOME</a>
+                    <a href="index2.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">HOLIDAYS</a>
+                    <a href="index1.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;;">DESTINATIONS</a>
+                    <a href="index3.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">FLIGHTS</a>
+                    <a href="index4.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">OFFERS</a>
+                    <a href="index5.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">CONTACT</a>
+                </div>
+
+
+                <div class="Search-Bar">
+                    <label for="search" style="color: rgb(255, 255, 255); font-weight: bold;">Search</label>
+                    <input type="search" id="search" name="search" placeholder="Type to Search"
+                        style="border-radius: 5px; border-color: black; box-sizing: border-box;  height: 33px; width: 180px; border: 2px solid rgb(203, 18, 18); box-shadow: 1px 1px 10px rgb(203, 18, 18);">
+                </div>
+
+            </nav>
+        </header>
+
+<!-- Contact Navigation -->
+<div class="contact-nav">
+  <span data-target="support" class="active">Support</span>
+  <span data-target="booking">Booking</span>
+  <span data-target="corporate">Corporate</span>
+  <span data-target="global">Global</span>
+  <span data-target="feedback">Feedback</span>
+</div>
+
+<!-- Pages Container -->
+<div class="pages">
+
+  <section class="page support">
+    <div class="panel">
+      <h1>24×7 Support</h1>
+      <p>Instant assistance for flights, hotels & tours worldwide.</p>
+      <button>Chat Now</button>
+    </div>
+  </section>
+
+  <section class="page booking">
+    <div class="panel">
+      <h1>Booking Desk</h1>
+      <p>Expert travel consultants at your service.</p>
+      <button>Call Booking</button>
+    </div>
+  </section>
+
+  <section class="page corporate">
+    <div class="panel">
+      <h1>Corporate Travel</h1>
+      <p>Business travel & MICE solutions.</p>
+      <button>Corporate Enquiry</button>
+    </div>
+  </section>
+
+  <section class="page global">
+    <div class="panel">
+      <h1>Global Offices</h1>
+      <p>Worldwide presence, local expertise.</p>
+      <button>Find Office</button>
+    </div>
+  </section>
+
+  <section class="page feedback">
+    <div class="panel">
+      <h1>Feedback</h1>
+      <p>Your experience matters to us.</p>
+      <button>Send Feedback</button>
+    </div>
+  </section>
+
+  <div style="border-radius: 50%; width: 60px; position: fixed; z-index: 99999; top: 90%; left: 5px; padding: 2px; text-align: center; height: 60px; font-size: 35px;" class="help">?</div>
+
+  <footer class="premium-footer">
+  <div class="footer-content">
+    <h3>Luxury Travel Co.</h3>
+    <p>Crafting premium journeys across the globe.</p>
+
+    <div class="footer-links">
+      <a href="#">Flights</a>
+      <a href="#">Hotels</a>
+      <a href="#">Tours</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <span>© 2026 Luxury Travel Co. All rights reserved.</span>
+  </div>
+</footer>
+
+
+</div>
+
+<div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+        </div>
+    </div>
+
+
+      <script>
+
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+
+            cursors.forEach((cursor) => {
+                cursor.classList.add("active");
+
+
+                function removeCursorActive() {
+                    cursor.classList.remove("active");
+                }
+                setTimeout(removeCursorActive, 1000);
+            });
+
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+
+            setTimeout(() => {
+                cursorClone.remove();
+            }, 1000);
+        });
+
+    </script>
+
+
+<script src="contact.js"></script>
+</body>
+</html>

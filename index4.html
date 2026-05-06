@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Travel Offers</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <header>
+            <nav class="first">
+
+                <div class="navbar">
+                    <video src="vid1.mp4" loop muted autoplay plasinline></video>
+                </div>
+
+                <div class="img1">
+                    <img src="img2.jpg" alt="logo" style="border-radius: 50%; width: 80px; position: fixed; left: 1%; z-index: 999;">
+                </div>
+
+                <div class="nav-links" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; gap: 15px;">
+                    <a href="index.html"
+                        style="border: 2px solid cyan; border-radius: 5px; border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px;padding: 6.5px; box-shadow: 0 0 10px cyan;">HOME</a>
+                    <a href="index2.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">HOLIDAYS</a>
+                    <a href="index1.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;;">DESTINATIONS</a>
+                    <a href="index3.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">FLIGHTS</a>
+                    <a href="index4.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">OFFERS</a>
+                    <a href="index5.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">CONTACT</a>
+                </div>
+
+
+                <div class="Search-Bar">
+                    <label for="search" style="color: rgb(255, 255, 255); font-weight: bold;">Search</label>
+                    <input type="search" id="search" name="search" placeholder="Type to Search"
+                        style="border-radius: 5px; border-color: black; box-sizing: border-box;  height: 33px; width: 180px; border: 2px solid rgb(203, 18, 18); box-shadow: 1px 1px 10px rgb(203, 18, 18);">
+                </div>
+
+            </nav>
+        </header>
+
+<div class="offers-menu">
+  <h2>Offers</h2>
+  <ul>
+    <li><a href="#honeymoon" class="active">Honeymoon</a></li>
+    <li><a href="#adventure">Adventure</a></li>
+    <li><a href="#luxury">Luxury</a></li>
+    <li><a href="#family">Family</a></li>
+    <li><a href="#budget">Budget</a></li>
+  </ul>
+</div>
+
+<section id="honeymoon" class="offer-section honeymoon">
+  <div class="content">
+    <h1>Honeymoon Escapes</h1>
+    <p>Private beaches, candlelight dinners & unforgettable moments.</p>
+    <button>Explore Packages</button>
+  </div>
+</section>
+
+<section id="adventure" class="offer-section adventure">
+  <div class="content">
+    <h1>Adventure Tours</h1>
+    <p>Mountains, deserts & extreme experiences.</p>
+    <button>View Adventures</button>
+  </div>
+</section>
+
+<section id="luxury" class="offer-section luxury">
+  <div class="content">
+    <h1>Luxury Vacations</h1>
+    <p>Five-star stays, private jets & elite services.</p>
+    <button>Luxury Deals</button>
+  </div>
+</section>
+
+<section id="family" class="offer-section family">
+  <div class="content">
+    <h1>Family Trips</h1>
+    <p>Safe, joyful & memorable family holidays.</p>
+    <button>Family Packages</button>
+  </div>
+</section>
+
+<section id="budget" class="offer-section budget">
+  <div class="content">
+    <h1>Budget Tours</h1>
+    <p>Affordable travel without compromise.</p>
+    <button>Budget Offers</button>
+  </div>
+</section>
+
+<div style="border-radius: 50%; width: 60px; position: fixed; z-index: 99999; top: 90%; left: 5px; padding: 2px; text-align: center; height: 60px; font-size: 35px;" class="help">?</div>
+
+ <footer>
+        <div class="last" style="background: linear-gradient(to right, rgb(18, 16, 16), rgb(61, 55, 55)); height: 10%; position: absolute; width: 100%; color: white; display: flex; justify-content: center; align-items: center;">
+        <p>Copyright &copy 2026 | All rights reserved</p>
+        </div>
+     </footer>
+
+
+     <div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+        </div>
+    </div>
+
+
+      <script>
+
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+
+            cursors.forEach((cursor) => {
+                cursor.classList.add("active");
+
+
+                function removeCursorActive() {
+                    cursor.classList.remove("active");
+                }
+                setTimeout(removeCursorActive, 1000);
+            });
+
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+
+            setTimeout(() => {
+                cursorClone.remove();
+            }, 1000);
+        });
+
+    </script>
+
+
+<script src="offer.js"></script>
+</body>
+</html>

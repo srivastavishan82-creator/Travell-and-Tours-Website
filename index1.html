@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Slider</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- <header> -->
+
+    <!-- <nav>
+            <a href="" class="active">Home</a>
+            <a href="">About</a>
+            <a href="">Portfolio</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav> -->
+
+    <!-- </header> -->
+
+    <div class="container">
+        <header>
+            <nav class="first">
+
+                <div class="navbar">
+                    <video src="vid1.mp4" loop muted autoplay plasinline></video>
+                </div>
+
+                <div class="img1">
+                    <img src="img2.jpg" alt="logo" style="border-radius: 50%; width: 80px; position: fixed; left: 1%;">
+                </div>
+
+                <div class="nav-links" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; gap: 15px;">
+                    <a href="index.html"
+                        style="border: 2px solid cyan; border-radius: 5px; border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px;padding: 6.5px; box-shadow: 0 0 10px cyan;">HOME</a>
+                    <a href="index2.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">HOLIDAYS</a>
+                    <a href="index1.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;;">DESTINATIONS</a>
+                    <a href="index3.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">FLIGHTS</a>
+                    <a href="index4.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">OFFERS</a>
+                    <a href="index5.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">CONTACT</a>
+                </div>
+
+
+                <div class="Search-Bar">
+                    <label for="search" style="color: rgb(255, 255, 255); font-weight: bold;">Search</label>
+                    <input type="search" id="search" name="search" placeholder="Type to Search"
+                        style="border-radius: 5px; border-color: black; box-sizing: border-box;  height: 33px; width: 180px; border: 2px solid rgb(203, 18, 18); box-shadow: 1px 1px 10px rgb(203, 18, 18);">
+                </div>
+
+            </nav>
+        </header>
+
+
+        <div class="carousel">
+
+            <div class="list">
+
+                <div class="item" style="background-image: url(Bali1.jpg);">
+                    <div class="content">
+                        <div class="title">BALI</div>
+                        <div class="name">INDONESIA</div>
+                        <div class="des">Bali is a tropical island famous for beaches, temples, rice terraces, and
+                            culture. It is popular for relaxation, yoga retreats, and adventure activities like surfing
+                            and snorkling.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image: url(Tokyo.jpg);">
+
+                    <div class="content">
+                        <div class="title">TOKYO</div>
+                        <div class="name">JAPAN</div>
+                        <div class="des">Tokyo blends traditional culture with advanced technology. You can explore
+                            ancient temples, modern skycrapers, anime culture, and enjoy world-famous Japanese food.
+                            Cherry blossom season is very popular.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Paris.jpg);">
+
+                    <div class="content">
+                        <div class="title">PARIS</div>
+                        <div class="name">FRANCE</div>
+                        <div class="des">Paris is known as the City of Love. It is famous for the Eiffel Tower, Louvre
+                            Museum, and beautiful streets. The city offers art, fashion, cafes, and romantic river
+                            cruises on the Seine River.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Rome.jpg);">
+
+                    <div class="content">
+                        <div class="title">ROME</div>
+                        <div class="name">ITALY</div>
+                        <div class="des">Rome is called the Eternal City. It is rich in ancient history with landmarks
+                            like the Colosseum, Roman Forum, and Pantheon. It is also home to Vatican City, making it
+                            important for culture and religion. </div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Dubai1.jpg);">
+
+                    <div class="content">
+                        <div class="title">DUBAI</div>
+                        <div class="name">UAE</div>
+                        <div class="des">Dubai is known for it's mordern architecture and luxury lifestyle. Attractions
+                            include the Burj Khalifa, shopping malls, desrt safaris, and man-made islands. It mixes
+                            traditions with futuristic development.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Maldives1.jpg);">
+
+                    <div class="content">
+                        <div class="title">MALDIVES</div>
+                        <div class="name">SOUTH-ASIA</div>
+                        <div class="des">The Maldives is a group of islands known for it's clear blue waters, coral
+                            reefs, and overwater villas. It is ideal for honeymoons, scuba diving, and peaceful
+                            holidays.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(London.jpg);">
+
+                    <div class="content">
+                        <div class="title">LONDON</div>
+                        <div class="name">ENGLAND</div>
+                        <div class="des">London is a global city with royal history and modern life. Major attractions
+                            include Buckingham Palace, Big Ben, London Eye, and world-class museums like the British
+                            Museum.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Switzerland1.jpg);">
+
+                    <div class="content">
+                        <div class="title">SWITZERLAND</div>
+                        <div class="name">ZURICH</div>
+                        <div class="des">Switzerland is a dream travel destination known for its breathtaking Alps,
+                            crystal-clear lakes, and charming towns. From scenic train journeys and snowy mountains to
+                            peaceful villages and vibrant cities, it offers the perfect mix of adventure, nature, and
+                            luxury. A place where every view feels like a postcard.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(NewYork1.jpg);">
+
+                    <div class="content">
+                        <div class="title">NEW YORK</div>
+                        <div class="name">USA</div>
+                        <div class="des">New York City is a vibrant travel destination where iconic landmarks,
+                            world-class entertainment, and endless energy come together. From Times Square and Central
+                            Park to Broadway shows and skyline views, the city offers unforgettable experiences at every
+                            turn. A place that truly never sleeps.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Singapore1.jpg);">
+
+                    <div class="content">
+                        <div class="title">SINGAPORE</div>
+                        <div class="name">SOUTHEAST-ASIA</div>
+                        <div class="des">Singapore is a modern travel destination known for its stunning skyline, clean
+                            streets, and rich cultural mix. From futuristic attractions and luxury shopping to tasty
+                            street food and beautiful gardens, it offers a perfect blend of tradition and innovation. A
+                            small city with big experiences.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url(Goa1.jpg);">
+
+                    <div class="content">
+                        <div class="title">GOA</div>
+                        <div class="name">INDIA</div>
+                        <div class="des">Goa is a lively travel destination famous for its golden beaches, vibrant
+                            nightlife, and relaxed coastal vibe. From scenic sunsets and water sports to rich culture
+                            and delicious seafood, it’s the perfect place to unwind and celebrate life. Where every day
+                            feels like a holiday.</div>
+                        <div class="btn">
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">See
+                                More</button>
+                            <button
+                                style="border: 2px solid cyan; box-shadow: 0 0 10px cyan; border-radius: 5px;transition: all 0.5s; cursor: pointer;">Book</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--next prev button-->
+            <div class="arrows">
+                <button class="prev">
+                    <</button>
+                        <button class="next">></button>
+            </div>
+
+
+            <!-- time running -->
+            <div class="timeRunning"></div>
+
+        </div>
+
+       <section class="hero1" data-aos="zoom-in" style="position: absolute; z-index: 99;">
+
+        <div class="one"><img style="width: 100%; height: 100%;" src="https://img.freepik.com/premium-photo/tranquil-scene-mountain-peak-reflects-serene-pond-dusk-generated-by-ai_188544-221767.jpg" alt="img"></div>
+        <div class="two"><p style="font-size: 53px; color: white; position: absolute; top: 30%; left: 29%; letter-spacing: 3px; ">PREFECTURE</p></div>
+        <div class="three" style="color: white;"><p style="top: 30%; position: absolute; left: 31%; font-size: 45px; letter-spacing: 3px;">NANGANO</p></div>
+        <div class="four"><img style="width: 100%; height: 100%;" src="https://img.freepik.com/premium-photo/front-view-dark-silhouette-modern-luxury-black-car-isolated-black-background_698214-3229.jpg" alt=""></div>
+        <div class="five"><img style="width: 100%; height: 100%;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3388a48a-5c53-41d1-860d-3cd6ace8f026/ddrbhib-a2560027-4216-4785-ab43-54678b8bdebc.jpg/v1/fill/w_684,h_1024,q_75,strp/the_nightmare_666_by_fargofazbear123_ddrbhib-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzMzODhhNDhhLTVjNTMtNDFkMS04NjBkLTNjZDZhY2U4ZjAyNlwvZGRyYmhpYi1hMjU2MDAyNy00MjE2LTQ3ODUtYWI0My01NDY3OGI4YmRlYmMuanBnIiwid2lkdGgiOiI8PTY4NCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IMyed4l5D185Rj8gcT5Ojzb9JC604FLW8D7EH0lVomA" alt=""></div>
+
+    </section>
+
+    <section style="position: absolute; z-index: 99;" class="hero2" data-aos="zoom-in"
+  data-aos-duration="1200"
+  data-aos-delay="200"
+  data-aos-easing="ease-out-cubic">
+       <video src="Scene (1).mp4" loop muted autoplay playsinline style="width: 40vw; position: relative; bottom: 0.2px; top: 63px; left: 20px;z-index: 22;"></video>
+       <div class="color" style="display: inline; position: absolute; left: 53%; top: 4.56%; margin: 30px; height: 83.4vh; line-height: 2.3;"> <h1><center>TRAVEL FOR FUN</center></h1><br>
+        <p style="padding: 7px; color: aliceblue; z-index: 9999;">Discover the world the way you’ve always dreamed. Our travel and tour experiences are crafted to turn every journey into an unforgettable story—where breathtaking destinations, handpicked stays, and seamless planning come together effortlessly. Whether you’re craving peaceful escapes, thrilling adventures, or culturally rich explorations, we take care of every detail so you can focus on making memories. From the moment you plan to the moment you return, let us guide you to places that inspire, moments that excite, and journeys that stay with you forever.</p>
+</div>
+
+
+    </section>
+
+
+      <section style="background-color: antiquewhite;">
+        <video style="position: absolute; width: 31%; top: 396.3%; left: 34%; height: 110%; background-size: border-box;" src="book.mp4" loop muted autoplay plays inline></video>
+      </section>
+
+      <video style="width: 455px; position: absolute; top: 355.4%; left: 34.5%;" src="do1.mp4" loop muted autoplay playsinline></video>
+
+      <img src="d1.jpg" alt="image" style=" position: absolute; top: 355%; width: 31.1%; height: 68%; left: 4px;">
+
+      <img src="d2.jpg" alt="image" style=" position: absolute; top: 428%; width: 31.1%; height: 70%; left: 4px;">
+
+      <img src="d9.jpg" alt="image" style=" position: absolute; top: 428%; width: 30.8%; height: 70%; left: 69%;">
+
+      <img src="d10.jpg" alt="image" style=" position: absolute; top: 355%; width: 30.8%; height: 68%; left: 69% ">
+
+      <img src="d3.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 105%; left: 0.2%;">
+
+      <img src="d4.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 105%; left: 34.6%;">
+
+      <img src="d5.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 105%; left: 68.8%;">
+
+      <img src="d7.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 180%; left: 0.2%;">
+
+      <img src="d6.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 180%; left: 34.6%;">
+
+      <img src="d8.jpg" alt="image" style=" position: absolute; width: 31%; height: 70%; top: 180%; left: 68.8%;">
+
+      <img src="d15.jpg" alt="image" style=" position: absolute; width: 31%; height: 93%; top: 256%; left: 0.2%;">
+
+      <img src="d14.jpg" alt="image" style=" position: absolute; width: 31%; height: 93%; top: 256%; left: 34.6%;">
+
+      <img src="d13.jpg" alt="image" style=" position: absolute; width: 31%; height: 93%; top: 256%; left: 68.8%;">
+
+      <!-- <div style="border-radius: 50%; width: 60px; position: fixed; z-index: 99999; top: 90%; left: 5px; padding: 2px; text-align: center; height: 60px; font-size: 35px;" class="help">?</div> -->
+
+      <div style="border-radius: 50%; width: 60px; position: fixed; z-index: 99999; top: 90%; left: 5px; padding: 2px; text-align: center; height: 60px; font-size: 35px;" class="help">?</div>
+
+      <footer>
+        <div class="last" style="background: linear-gradient(to right, rgb(18, 16, 16), rgb(61, 55, 55)); height: 11.9%; position: absolute; width: 100%; color: white; display: flex; justify-content: center; align-items: center; top: 498%;">
+        <p>Copyright &copy 2026 | All rights reserved</p>
+        </div>
+     </footer>
+
+        <script src="app.js"></script>
+    </div>
+
+
+    <div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+        </div>
+    </div>
+
+    <script>
+
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+
+            cursors.forEach((cursor) => {
+                cursor.classList.add("active");
+
+
+                function removeCursorActive() {
+                    cursor.classList.remove("active");
+                }
+                setTimeout(removeCursorActive, 1000);
+            });
+
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+
+            setTimeout(() => {
+                cursorClone.remove();
+            }, 1000);
+        });
+
+    </script>
+
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script> -->
+
+<script>
+    AOS.init({
+      duration: 1200,
+      once: false,
+      mirror: true
+    });
+  </script>
+
+
+
+</body>
+
+</html>

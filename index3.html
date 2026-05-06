@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWay Travels - Book Your Flight</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">✈️ SkyWay</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#search">Book Flight</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav> -->
+
+    <header>
+            <nav class="first">
+
+                <div class="navbar">
+                    <video src="vid1.mp4" loop muted autoplay plasinline></video>
+                </div>
+
+                <div class="img1">
+                    <img src="img2.jpg" alt="logo" style="border-radius: 50%; width: 80px; position: fixed; left: 1%; z-index: 999;">
+                </div>
+
+                <div class="nav-links" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; gap: 15px;">
+                    <a href="index.html"
+                        style="border: 2px solid cyan; border-radius: 5px; border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px;padding: 6.5px; box-shadow: 0 0 10px cyan;">HOME</a>
+                    <a href="index2.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">HOLIDAYS</a>
+                    <a href="index1.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;;">DESTINATIONS</a>
+                    <a href="index3.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">FLIGHTS</a>
+                    <a href="index4.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">OFFERS</a>
+                    <a href="index5.html"
+                        style="border: 2px solid cyan; border-radius: 5px;border-width: 3px; background-color: rgb(32, 27, 27); font-size: 13.5px; padding: 6.5px; box-shadow: 0 0 10px cyan;">CONTACT</a>
+                </div>
+
+
+                <div class="Search-Bar">
+                    <label for="search" style="color: rgb(255, 255, 255); font-weight: bold;">Search</label>
+                    <input type="search" id="search" name="search" placeholder="Type to Search"
+                        style="border-radius: 5px; border-color: black; box-sizing: border-box;  height: 33px; width: 180px; border: 2px solid rgb(203, 18, 18); box-shadow: 1px 1px 10px rgb(203, 18, 18);">
+                </div>
+
+            </nav>
+        </header>
+
+
+       <!-- ===== Flight Menu ===== -->
+<div class="flight-menu">
+  <h2>✈ Flights</h2>
+  <a href="international-flights.html">International</a>
+  <a href="domestic-flights.html">Domestic</a>
+  <a href="business-class.html">Business Class</a>
+  <a href="first-class.html">First Class</a>
+  <a href="budget-flights.html">Budget Flights</a>
+</div>
+
+<!-- ===== Sections (Pages on Scroll) ===== -->
+<section id="international" class="flight-section international">
+  <div class="flight-content">
+    <h1>International Flights</h1>
+    <p>Fly across continents with world-class airlines and seamless comfort.</p>
+    <button>Search Flights</button>
+  </div>
+</section>
+
+<section id="domestic" class="flight-section domestic">
+  <div class="flight-content">
+    <h1>Domestic Flights</h1>
+    <p>Fast, reliable and affordable flights across the country.</p>
+    <button>View Routes</button>
+  </div>
+</section>
+
+<section id="business" class="flight-section business">
+  <div class="flight-content">
+    <h1>Business Class</h1>
+    <p>Lie-flat seats, premium dining & priority services.</p>
+    <button>Business Deals</button>
+  </div>
+</section>
+
+<section id="first" class="flight-section first">
+  <div class="flight-content">
+    <h1>First Class Experience</h1>
+    <p>Private suites, luxury lounges & elite hospitality.</p>
+    <button>Elite Flights</button>
+  </div>
+</section>
+
+<section id="budget" class="flight-section budget">
+  <div class="flight-content">
+    <h1>Budget Airlines</h1>
+    <p>Lowest fares with trusted airlines worldwide.</p>
+    <button>Cheap Flights</button>
+  </div>
+</section>
+
+
+
+     <div class="cursor">
+        <div class="click-animation">
+            <div class="shape circle big"></div>
+            <div class="shape circle small"></div>
+            <div class="shape triangle yellow"></div>
+            <div class="shape triangle green"></div>
+            <div class="shape disc"></div>
+        </div>
+    </div>
+
+
+      <script>
+
+        const cursorAnimation = document.querySelector(".cursor");
+        const cursors = document.querySelectorAll(".cursor");
+
+        document.addEventListener("click", (e) => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            cursorAnimation.style.top = y + "px";
+            cursorAnimation.style.left = x + "px";
+
+            cursors.forEach((cursor) => {
+                cursor.classList.add("active");
+
+
+                function removeCursorActive() {
+                    cursor.classList.remove("active");
+                }
+                setTimeout(removeCursorActive, 1000);
+            });
+
+            let cursorClone = cursorAnimation.cloneNode(true);
+            document.querySelector("body").appendChild(cursorClone);
+
+            setTimeout(() => {
+                cursorClone.remove();
+            }, 1000);
+        });
+
+    </script>
+
+    <div style="border-radius: 50%; width: 60px; position: fixed; z-index: 99999; top: 90%; left: 5px; padding: 2px; text-align: center; height: 60px; font-size: 35px;" class="help">?</div>
+
+    <footer>
+        <div class="last" style="background: linear-gradient(to right, rgb(18, 16, 16), rgb(61, 55, 55)); height: 10%; position: absolute; width: 100%; color: white; display: flex; justify-content: center; align-items: center;">
+        <p>Copyright &copy 2026 | All rights reserved</p>
+        </div>
+     </footer>
+
+
+
+    <script src="flight.js"></script>
+</body>
+</html>
